@@ -1,7 +1,5 @@
 # Introduction
 
-## Long story short
-
 Initially, Web3alert was created as a notification service that allows users to subscribe to events in blockchain projects and receive notifications about them. Our development team has created integrations with more than 20 projects. As the number of integrations grew, it became clear that there was a need for a toolkit that would allow users and third-party developers to create their own integrations. With our transition to a new version, we want to introduce Web3alert as an automation platform that allows more than just notifications.
 
 ## Web3alert is an automation platform
