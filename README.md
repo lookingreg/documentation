@@ -1,1 +1,1 @@
-# This is repositary of Web3alert Documentation.
+# Web3alert Documentation.
