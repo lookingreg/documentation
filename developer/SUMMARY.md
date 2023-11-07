@@ -1,8 +1,9 @@
 # Table of contents
 
+* [Introduction](README.md)
+
 ## General
 
-* [Introduction](README.md)
 * [Integration example](general/integration-example.md)
 * [Roadmap](general/roadmap.md)
 * [Step-by-step integration guide](general/step-by-step-integration-guide.md)
