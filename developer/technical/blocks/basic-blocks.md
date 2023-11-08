@@ -67,7 +67,7 @@ Block initiator. Starts the Pipeline once in a given time interval.
 
 * **interval**: `string` 
 
-    Human readable duration. The lib [parse_duration](https://github.com/jkroso/parse-duration) is used for conversion.
+    Human readable duration. The lib [parse-duration](https://github.com/jkroso/parse-duration) is used for conversion.
 
 #### Output:
 
