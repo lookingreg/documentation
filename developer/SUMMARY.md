@@ -14,6 +14,5 @@
 
 ## Technical
 
-* [Introduction](technical/tech-intro.md)
 * [Triex](technical/triex.md)
 * [Web3alert](technical/web3alert.md)
