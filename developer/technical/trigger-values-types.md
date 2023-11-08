@@ -56,7 +56,7 @@ Trigger's values is a list of parameters that must be filled in for the trigger 
             - { type: number }
     ```
 
-## Special Types
+<!-- ## Special Types
 
 - Threshold
 
@@ -82,19 +82,19 @@ Trigger's values is a list of parameters that must be filled in for the trigger 
                 format: evm
             amount: 
                 type: number
-    ```
+    ``` -->
 
-## Address Types
+## Address Type
 
-For convenient management of the address book in the Web3alert, addresses have been divided into different types:
+For convenient management of the address book in the Web3alert, addresses have been divided into different groups. Here is a list of supported address formats:
 
-- address-plain
+- Plain
 
     ```yaml
     address-plain: { type: address }
     ```
 
-- address-ss58 _(Substrate)_
+- SS58 _(Substrate)_
 
     ```yaml
     address-ss58:
@@ -103,7 +103,7 @@ For convenient management of the address book in the Web3alert, addresses have b
         prefix: 0
     ```
 
-- address-evm
+- EVM
 
     ```yaml
     address-evm:
@@ -111,7 +111,7 @@ For convenient management of the address book in the Web3alert, addresses have b
         format: evm
     ```
 
-- address-bitcoin
+- Bitcoin
 
     ```yaml
     address-bitcoin:
@@ -119,7 +119,7 @@ For convenient management of the address book in the Web3alert, addresses have b
         format: bitcoin
     ```
 
-- address-sui
+- SUI
 
     ```yaml
     address-sui:
@@ -127,7 +127,7 @@ For convenient management of the address book in the Web3alert, addresses have b
         format: sui
     ```
 
-- address-cosmos
+- Cosmos
 
     ```yaml
     address-cosmos:
