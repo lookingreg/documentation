@@ -49,7 +49,7 @@ meta:
   description: My test project
 ```
 
-Now that `porject.yml` is filled, we can call the `push` command from the project directory:
+Now that `project.yml` is filled, we can call the `push` command from the project directory:
 ```
 web3alert project push
 ```
