@@ -17,7 +17,7 @@ The first step in configuring the trigger is to give it a unique name.
 name: my-first-trigger
 ```
 
-Next, we can specify a trigger labels, for example specifying which `group` the trigger belongs to. If this label is not specified, the trigger defaults to the `other` group.
+Next, we can specify trigger labels, for example, specifying which `group` the trigger belongs to. If this label is not specified, the trigger defaults to the `other` group.
 
 ```yaml
 labels:
@@ -32,7 +32,7 @@ meta:
   description: My first trigger
 ```
 
-After describing the trigger, it is necessary to describe the initial parameters (`values`) that are required for the trigger to work. If the trigger does not need initial parameters, values field can be left empty.
+After describing the trigger, it is necessary to describe the initial parameters (`values`) that are required for the trigger to work. If the trigger does not need initial parameters, the values field can be left empty.
 
 ```yaml
 values: {}
@@ -40,7 +40,7 @@ values: {}
 
 More information about the types of values can be found [here](../../trigger-values-types.md).
 
-The last but the most important part is to describe the core of our trieger - `pipeline`. Pipeline consists of a list of nodes and a pointer to which node is the output node. All nodes are described in blocks. There are many different blocks for different tasks. You can find the list of basic blocks [here](../../blocks/basic-blocks.md).
+The last but most important part is to describe the core of our trigger - the `pipeline`. The pipeline consists of a list of nodes and a pointer to which node is the output node. All nodes are described in blocks. There are many different blocks for different tasks. You can find the list of basic blocks [here](../../blocks/basic-blocks.md).
 
 Let's look at a simple example. Suppose we want to create a trigger that will output some random number from 0 to 100 every 10 minutes. We'll need two blocks for this:
 
@@ -86,7 +86,7 @@ pipeline:
         output: "{{ Math.floor(Math.random() * 100) }}"
 ```
 
-If we want to allow the user to customize the range of random numbers, we can set a two parameters of type number in values and use it in the Pipeline. It will look like this:
+If we want to allow the user to customize the range of random numbers, we can set two parameters of type number in values and use it in the Pipeline. It will look like this:
 
 ```yaml
 name: my-first-trigger
@@ -115,4 +115,4 @@ pipeline:
         output: "{{ Math.floor( (Math.random() + 1) * (values.upper - values.lower) ) }}"
 ```
 
-Next we will study how to test our trigger before push it to the Web3alert.
+Next, we will study how to test our trigger before pushing it to the Web3alert.
