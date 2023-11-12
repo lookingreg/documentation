@@ -1,12 +1,12 @@
 # Step 4. Create resource
 
-Some blocks require more complex initialization, and in order not to go through the process of filling in the necessary parameters each time, this process has been allocated to a separate entity - the `resource`. You can read more about resource [here](../../web3alert.md#resource). Here we will give just a couple of examples of when resources are used. 
+Some blocks require more complex initialization, and in order not to go through the process of filling in the necessary parameters each time, this process has been allocated to a separate entity - the `resource`. You can read more about the resource [on this page](../../web3alert.md#resource). Here we will give just a couple of examples of when the resources are used. 
 
 For example, if a node sends data to a third-party application. Of course, it is possible to add the process of user authorization to the trigger itself, but it is much more convenient if the user is authorized in advance and the block will pass only a reference to the resource containing authorization data.
 
-Or another example. A node that works with EVM smartcontract events. Before starting such a node needs to specify which smartcontract, according to which scheme and with which specific event it should work. If there is only one such trigger, it is not difficult to specify all these entities, but what if the task is to create a trigger for each event in the smartcontract. In this case, it will be correct to describe the parameters of the smart contract - `Address` and `ABI`, in the resource, and the node will refer to the created resource.
+Another example - a node that works with EVM smart contract events. Before starting such a node it is needed to specify with which smart contract, according to which scheme, and with which specific events it should work. If there is only one such trigger, it is not difficult to specify all these entities. But what if the task is to create a trigger for each event in the smart contract? In this case, it will be correct to describe the parameters of the smart contract - `Address` and `ABI`, in the resource, and the node will refer to the created resource.
 
-To add resource to the project, you need to go to the `resources` directory, create a resource configuration file there and describe the resource properties in the file. For an example, let's take a simple ERC20 Smartcontract of the USDT token.
+To add a resource to the project, you need to go to the `resources` directory, create a resource configuration file there, and describe the resource properties in the file. For example, let's take the simple ERC20 smart contract of the USDT token.
 
 ```yaml
 name: erc20-usdt
